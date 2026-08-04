@@ -100,15 +100,14 @@ placeholder="Escriba aquí su descripción"></textarea>
 </div>
 <br>
 
-<p class="fw-bold mt-3 mb-1">Presencial:</p>
+<p class="fw-bold mt-3 mb-1">Turno:</p>
 <div class="form-check">
-<input class="form-check-input" type="radio" name="presencial" id="presencial">
+<input class="form-check-input" type="radio" name="turno" id="presencial">
 <label class="form-check-label" for="presencial">Presencial</label>
 </div>
 
-<p class="fw-bold mt-3 mb-1">Virtual:</p>
 <div class="form-check">
-<input class="form-check-input" type="radio" name="virtual" id="virtual">
+<input class="form-check-input" type="radio" name="turno" id="virtual">
 <label class="form-check-label" for="virtual">Virtual</label>
 </div>
 <br>
@@ -143,7 +142,7 @@ Aprender hacer paginas webs.
 <br>
 
 <!-- Tabla -->
-<table class="table table-striped table-bordered">
+<table class="table table-striped table-bordered table-hover">
 <thead class="table-primary">
 <tr><th>Nombre</th><th>Edad</th><th>Sección</th></tr>
 </thead>
@@ -155,7 +154,58 @@ Aprender hacer paginas webs.
 </table>
 <br>
 
+<div class="container mt-4">
+<div class="card shadow-sm">
+<div class="card-body">
+<h1 class="h3 text-primary">Registro de estudiante</h1>
 
+<div class="mb-3">
+<label class="form-label">Nombre</label>
+<input type="text" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Correo</label>
+<input type="text" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Especialidad</label>
+<select class="form-select">
+<option>Desarrollo</option>
+<option>Soporte</option>
+</select>
+</div>
+
+<p class="fw-bold mt-3 mb-1">Turno:</p>
+<div class="form-check">
+<input class="form-check-input" type="radio" name="turno" id="manana">
+<label class="form-check-label" for="manana">Mañana</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio" name="turno" id="tarde">
+<label class="form-check-label" for="tarde">Tarde</label>
+</div>
+<br>
+
+<div class="mb-3">
+<label for="observaciones" class="form-label">Observaciones</label>
+<textarea class="form-control" id="observaciones" rows="4"
+placeholder="Escriba aquí su comentario"></textarea>
+</div>
+
+<div class="form-check mb-3">
+<input class="form-check-input" type="checkbox" id="acepto">
+<label class="form-check-label" for="acepto">Acepto participar</label>
+</div>
+<button class="btn btn-primary">Enviar registro</button>
+<div class="alert alert-success" role="alert">
+Exito.
+</div>
+</div>
+</div>
+</div>
 
 
 </body>
