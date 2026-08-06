@@ -23,6 +23,23 @@
  height: 280px;
  }
 }
+
+
+.seccion-servicio {
+ background-color: white;
+ border-radius: 18px;
+ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+ padding: 35px;
+ margin-bottom: 40px;
+}
+.seccion-servicio img {
+ width: 100%;
+ height: 330px;
+ object-fit: cover;
+ border-radius: 14px;
+}
+
+
 </style>
 
 
@@ -79,22 +96,123 @@
 
 
 
+<div id="carruselZoe" class="carousel slide" data-bs-ride="carousel">
 
-<div class="carousel-indicators">
- <button type="button" data-bs-target="#carruselZoe"
- data-bs-slide-to="0" class="active"></button>
- <button type="button" data-bs-target="#carruselZoe"
- data-bs-slide-to="1"></button>
- <button type="button" data-bs-target="#carruselZoe"
- data-bs-slide-to="2"></button>
+  <!-- CONDICIÓN 1: Indicadores para las tres diapositivas -->
+  <div class="carousel-indicators"> 
+    <button type="button" data-bs-target="#carruselZoe" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> 
+    <button type="button" data-bs-target="#carruselZoe" data-bs-slide-to="1" aria-label="Slide 2"></button> 
+    <button type="button" data-bs-target="#carruselZoe" data-bs-slide-to="2" aria-label="Slide 3"></button> 
+  </div> 
+
+  <!-- CONTENIDO DE LAS DIAPOSITIVAS -->
+  <div class="carousel-inner">
+
+    <!-- Diapositiva 1: Ventas (CONDICIONES 2 y 4) -->
+    <div class="carousel-item active"> 
+      <img src="img/zoe-ventas.jpg/DIGITALIZAR-VENTAS-300x300.png" class="d-block w-80" alt="Ventas de ZOE"> 
+      <div class="carousel-caption d-none d-md-block"> 
+        <h5>Facturación y ventas</h5> 
+        <p>Registra las operaciones de tu negocio de forma rápida.</p> 
+      </div> 
+    </div>
+
+    <!-- Diapositiva 2: Inventario (CONDICIONES 2 y 4) -->
+    <div class="carousel-item"> 
+      <img src="img/zoe-inventario.jpg/inventario-herencia-300x300.png" class="d-block w-80" alt="Inventario de ZOE"> 
+      <div class="carousel-caption d-none d-md-block"> 
+        <h5>Control de Inventario</h5> 
+        <p>Administra tu stock, productos y proveedores en tiempo real.</p> 
+      </div> 
+    </div>
+
+    <!-- Diapositiva 3: Reportes (CONDICIONES 2 y 4) -->
+    <div class="carousel-item"> 
+      <img src="img/zoe-reportes.jpg/Iconos-web-05-300x300.png" class="d-block w-80" alt="Reportes de ZOE"> 
+      <div class="carousel-caption d-none d-md-block"> 
+        <h5>Reportes y Estadísticas</h5> 
+        <p>Analiza el crecimiento de tu empresa con gráficos e informes.</p> 
+      </div> 
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carruselZoe" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carruselZoe" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+
 </div>
-<div class="carousel-item active">
- <img src="img/zoe-ventas.jpg" class="d-block w-100" alt="Ventas de ZOE">
- <div class="carousel-caption d-none d-md-block">
- <h5>Facturación y ventas</h5>
- <p>Registra las operaciones de tu negocio.</p>
+
+
+<section class="container py-5">
+ <div class="row align-items-center g-4">
+ <div class="col-lg-6">
+ <h2>Control de Inventario</h2>
+ <p>Administra los productos y las existencias del negocio.</p>
+ <ul>
+ <li>Registro de artículos.</li>
+ <li>Ajustes de inventario.</li>
+ <li>Toma física.</li>
+ </ul>
  </div>
-</div>
+ <div class="col-lg-6">
+ <img src="img/zoe-inventario.jpg/inventariodecasafacil-icon-300x300.webp"
+ class="img-fluid rounded shadow"
+ alt="Pantalla de inventario de ZOE">
+ </div>
+ </div>
+</section>
+
+<section class="container py-5 border-top">
+ <div class="row align-items-center g-4">
+ <div class="col-lg-6">Imagen</div>
+ <div class="col-lg-6">Texto</div>
+ </div>
+</section>
+
+
+<section class="container py-5 border-top"> 
+  
+  <div class="row align-items-center g-4"> 
+    
+    
+    <div class="col-lg-6">
+      <img src="img/zoe-ventas.jpg/icon-vendedor-sobreprecio-300x300.jpeg" class="img-fluid rounded shadow" alt="Pantalla de ventas de ZOE">
+    </div> 
+    
+    
+    <div class="col-lg-6">
+      <h2>Facturación y Ventas</h2>
+      <p>Registra las operaciones comerciales de tu empresa de forma eficiente.</p>
+      <ul>
+        <li>Emisión de facturas.</li>
+        <li>Control de cajas y turnos.</li>
+        <li>Reportes diarios de ingresos.</li>
+      </ul>
+    </div> 
+    
+  </div> 
+</section>
+
+
+<article class="seccion-servicio">
+ <div class="row align-items-center g-4">
+ <div class="col-lg-6">
+ <h2>Operaciones de Ventas</h2>
+ <p>Registra las ventas y los documentos del negocio.</p>
+ <a href="#contacto" class="btn btn-primary">Conocer más</a>
+ </div>
+ <div class="col-lg-6">
+ <img src="img/zoe-ventas.jpg/53507-300x300-1.webp" alt="Pantalla de ventas de ZOE">
+ </div>
+ </div>
+</article>
+
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
