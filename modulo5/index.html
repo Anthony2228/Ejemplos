@@ -45,6 +45,8 @@
 
 </head>
 <body>
+
+
  <!-- Aquí se construirá la página -->
   <img src="img/zoe-inventario.jpg/Gestion-de-almacenes-e-inventario-cambio.jpg"
  class="img-fluid rounded shadow"
@@ -213,6 +215,94 @@
  </div>
 </article>
 
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"> 
+  <div class="container"> 
+    <a class="navbar-brand fw-bold" href="#inicio">OB Soluciones</a> 
+    
+    <!-- Botón del menú móvil -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"> 
+      <span class="navbar-toggler-icon"></span> 
+    </button> 
+    
+    <div class="collapse navbar-collapse" id="menuPrincipal"> 
+      <!-- Enlaces que conectan con tus secciones -->
+      <ul class="navbar-nav ms-auto"> 
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li> 
+        <li class="nav-item"><a class="nav-link" href="#empresa">Empresa</a></li> 
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li> 
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li> 
+      </ul> 
+    </div> 
+  </div> 
+</nav>
+
+<!-- Sección Inicio (Punto de partida de la página) -->
+<header id="inicio" class="bg-light py-5 text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Bienvenidos a OB Soluciones</h1>
+    <p class="lead">Tecnología eficiente para el crecimiento de tu negocio.</p>
+  </div>
+</header>
+
+<!-- 2. Sección Empresa vinculada con href="#empresa" -->
+<section id="empresa" class="container py-5">
+  <div class="row text-center">
+    <div class="col-12">
+      <h2>Nuestra Empresa</h2>
+      <p class="lead text-muted">Desarrollamos herramientas de software intuitivas y potentes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Sección Servicios vinculada con href="#servicios" -->
+<section id="servicios" class="bg-light border-top border-bottom py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Nuestros Servicios</h2>
+    
+    <!-- Subsección Inventario -->
+    <div class="row align-items-center g-4 mb-5"> 
+      <div class="col-lg-6"> 
+        <h3>Control de Inventario</h3> 
+        <p>Administra los productos y las existencias del negocio.</p> 
+        <ul> 
+          <li>Registro de artículos.</li> 
+          <li>Ajustes de inventario.</li> 
+          <li>Toma física.</li> 
+        </ul> 
+      </div> 
+      <div class="col-lg-6"> 
+        <img src="img/zoe-inventario.jpg" class="img-fluid rounded shadow" alt="Pantalla de inventario de ZOE"> 
+      </div> 
+    </div> 
+
+    <!-- Subsección Ventas -->
+    <div class="row align-items-center g-4"> 
+      <div class="col-lg-6">
+        <img src="img/zoe-ventas.jpg" class="img-fluid rounded shadow" alt="Pantalla de ventas de ZOE">
+      </div> 
+      <div class="col-lg-6">
+        <h3>Facturación y Ventas</h3>
+        <p>Registra las operaciones comerciales de tu empresa de forma eficiente.</p>
+        <ul>
+          <li>Emisión de facturas.</li>
+          <li>Control de cajas y turnos.</li>
+          <li>Reportes diarios de ingresos.</li>
+        </ul>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- 4. Pie de página de Contacto vinculado con href="#contacto" -->
+<footer id="contacto" class="bg-dark text-white py-5">
+  <div class="container text-center">
+    <h2>Contacto</h2>
+    <p>¿Listo para optimizar tu sistema? Escríbenos a contacto@obsoluciones.com</p>
+    <p class="mb-0 text-muted">copy; 2026 OB Soluciones. Todos los derechos reservados.</p>
+  </div>
+</footer>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
